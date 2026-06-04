@@ -57,7 +57,7 @@ def calculate_average_word_length(text: str) -> float:
 
 def count_paragraphs(text: str) -> int:
     if not text or not text.strip():
-        return 0
+        return 1
 
     paragraphs: list[str] = []
     current_lines: list[str] = []
@@ -77,7 +77,7 @@ def count_paragraphs(text: str) -> int:
 
 def count_sentences(text: str) -> int:
     if not text or not text.strip():
-        return 0
+        return 1
 
     count = 0
     i = 0
